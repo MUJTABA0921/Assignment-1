@@ -1,4 +1,10 @@
-Q1:solution
+Q1: Write a program to print the following pattern
+1
+121
+12321
+1234321
+123454321
+         solution:-
 
 for i in range(1, 6):
     for j in range(1, i + 1):
@@ -7,13 +13,23 @@ for i in range(1, 6):
         print(j, end="")
     print()
 
+output:-
+        1
+        121
+        12321
+        1234321
+        123454321
 
-Q2:solution
+Q2:write a program to print all prime numbers.
+                                             solution:-
 
 for num in range(2, 101):
     is_prime = True
     for i in range(2, num):
         if num % i == 0:
+
+output:-
+       2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 
             is_prime = False
             break
     if is_prime:
